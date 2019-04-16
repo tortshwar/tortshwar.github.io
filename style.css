@@ -22,13 +22,38 @@ h1 {
   padding: 0 5em 0 0;
   font-size: inherit;
   line-height: 1;
-  border: 0.15em solid #000;
+  z-index: 2;
 }
 
-h {
-  display: block;
-  color: #666;
-  text-decoration: none;
-  padding: 0.6em;
+#outline {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 10em;
+  height: 11em;
+  margin-top: 8.5em;
+  margin-left: 10em;
   border: 0.15em solid #000;
+  z-index: 1;
+}
+
+#text {
+  color: #000;
+  padding-left: 7.1em;
+  padding-bottom: 0.75em;
+  line-height: 1;
+  font-size: 3.75vmin;
+  font-weight: bold;
+  position: absolute;
+  z-index: 2;
+}
+
+#fill {
+  width: 95%;
+  height: 80%;
+  background-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
+  margin-top: 1.9em;
+  margin-left: 2.5%;
+  
+  position: absolute;
 }
