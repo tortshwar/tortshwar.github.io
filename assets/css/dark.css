@@ -1,12 +1,7 @@
 html {
+  background: #000;
   box-sizing: border-box;
   font-family: 'Dosis', sans-serif;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
 }
 
 body {
@@ -17,20 +12,28 @@ body {
   font-size: 5vmin;
 }
 
+a, a:link, a:visited, a:hover, a:active, a:focus {
+  border:none;
+  outline:none;
+  text-decoration:none;
+  color:inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
 #outline {
   align-items: center;
   justify-content: center;
   position: relative;
   width: 10em;
   height: 11em;
-  border: 0.15em solid #000;
+  border: 0.15em solid #fff;
   z-index: 1;
 }
 
 #text {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(120deg, #e6c74d 0%, #DEAE4C 100%);
+  background-image: linear-gradient(120deg, #40e0d0 0%, #44CDD5 100%);
   margin-left: 0.4em;
   margin-top: 0.5em;
   line-height: 1;
@@ -46,7 +49,7 @@ body {
   width: 1em;
   margin-left: 8.4em;
   margin-top: 0.25em;
-  background-image: linear-gradient(120deg, #D9A14E 0%, #D6984B 100%);
+  background-image: linear-gradient(120deg, #48BBDA 0%, #4CB1DF 100%);
   border-radius: 50%;
   position: absolute;
 }
@@ -54,7 +57,7 @@ body {
 #fill {
   width: 95%;
   height: 80%;
-  background-image: linear-gradient(120deg, #e6c74d 0%, #cc7b4c 100%);
+  background-image: linear-gradient(120deg, #40e0d0 0%, #5492E7 100%);
   margin-top: 1.9em;
   margin-left: 2.5%;
   position: absolute;

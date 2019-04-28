@@ -3,18 +3,19 @@ html {
   font-family: 'Dosis', sans-serif;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 body {
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
   font-size: 5vmin;
+}
+
+a, a:link, a:visited, a:hover, a:active, a:focus {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #outline {
