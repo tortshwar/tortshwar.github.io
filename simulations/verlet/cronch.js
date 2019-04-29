@@ -1,19 +1,20 @@
 window.onclick = function() {
   var canvas = document.getElementById("canvas"),
     context = canvas.getContext("2d"),
-    width = canvas.width = window.innerWidth,
-    height = canvas.height = window.innerHeight;
+    width = canvas.width,
+    height = canvas.height;
+  context.fillStyle = 'rgb(240,205,0)';
   
   var points = [],
     bounce = 0.9,
     gravity = 0.5,
-    friction = 0.999;
+    friction = 0.995;
   
   points.push({
-    x: 100,
-    y: 100,
-    oldx: 95,
-    oldy: 95
+    x: 10,
+    y: canvas.height-(5+Math.random()*20),
+    oldx: Math.random()*10,
+    oldy: canvas.height
   });
   
   
@@ -62,7 +63,7 @@ window.onclick = function() {
     for(var i = 0; i < points.length; i++) {
       var p = points[i];
       context.beginPath();
-      context.arc(p.x, p.y, 5, 0, Math.PI * 2);
+      context.arc(p.x, p.y, 10, 0, Math.PI * 2);
       context.fill();
     }
   }
