@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  background: #000;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: rgb(100,90,121);
+}
+
+a:active {
+  color: rgb(100,90,121);
+}
+
+
+div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#a0 {
+  position: relative;
+  right: 2em;
+  padding: 0.5em;
+  border: 0.1em solid #fff;
+  border-radius: 10%;
+}
+
+#a1 {
+  position: relative;
+  left: 2em;
+  padding: 0.5em;
+  border: 0.1em solid #fff;
+  border-radius: 10%;
+}
